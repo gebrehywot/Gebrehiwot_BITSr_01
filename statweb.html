@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div id="first">
+          <h3>Welcome to my website</h3>
+        </div>
+        <div>
+          <a href="#basic-details">Home</a>
+          <a href="#about">About</a>
+          <a href="#skill">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <section id="basic-details">
+        <div class="second">
+          <img src="/image/gebre.jpg" alt="software engineer" />
+        </div>
+        <div class="details">
+          <p>Name: <span id="name">Gebrehiwot Agumass Mengie </span></p>
+          <p>Address: <span id="address">Bahir Dar</span></p>
+          <p>Date of Birth: <span id="dob">June/26/1990</span></p>
+          <p>Place of Birth: <span id="pob">North Achefer Ysmala</span></p>
+          <p>Gender: <span id="pb">Male</span></p>
+          <p>Status: <span id="stat">4th year Software Engineering Student</span></p>
+        </div>
+      </section>
+      <section class="bio">
+        <div id="about">
+          <h2>About me</h2>
+          <p>
+            I'm Gebrehiwot Agumass. And I have completed my primary education
+            at Ysmala Primary School, followed by high school at Bahir Dar STEM
+            incubation Center. Then went on to pursue higher education at BIT
+            (Bahir Dar Institute of Technology). Through my educational journey,
+            I have gain a strong foundation in various subjects and developed
+            skills that will prepare me for my future career and personal
+            goals.with a highly motivation and interest.I have pursued education
+            at different levels.And I want to have a strong foundation in
+            various subjects and have developed skills in critical thinking,
+            problem-solving, and communication. I interested in exploring new
+            technologies, learning about different programming languages, and
+            volunteering in my community.I am competent in various programming
+            languages, database management, and web development. My career plan
+            is to work in the field of software development, where I can utilize
+            my skills and knowledge to create innovative solutions. My dream is
+            to become an entrepreneur and start my own software development
+            company that can make a positive impact on society.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div id="skill">
+          <h2>Skills</h2>
+          <div class="logos">
+            <ul>
+              <li>
+                <img
+                  src="https://www.shutterstock.com/image-vector/vector-collection-web-development-shield-260nw-1188713473.jpg"
+                  alt="HTML Logo"
+                />
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="https://download.logo.wine/logo/React_(web_framework)/React_(web_framework)-Logo.wine.png"
+                    alt="React"
+                  />
+                  <figcaption>React</figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="https://logowik.com/content/uploads/images/flutter5786.jpg"
+                    alt="Flutter"
+                  />
+                  <figcaption>Flutter</figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+  
+      <section>
+  <div id="contact">
+    <h2>Contact</h2>
+    <p>
+      Feel free to get in touch with me via the following contacts which
+      are given below.And I am intersted and
+    </p>
+    <ul>
+      <li><a href="mailto:gebreagumass@gmail.com">Email: gebreagumass@gmail.com</a></li>
+      <li><a href="https://t.me/gebrehiwot89">Telegram: @gebrehiwot89</a></li>
+      <li><a href="https://www.instagram.com/gebreagumass/">Instagram:Gebrehiwotagumass</a></li>
+      <li>Phone: +251925419229</li>
+    </ul>
+  </div>
+</section>
+
+      <footer class="footer">
+        <p class="parfooter">&copy; 2023 My Website</p>
+      </footer>
+    </div>
+    <script>
+      const links = document.querySelectorAll("nav a");
+      links.forEach((link) => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+          const section = document.querySelector(link.getAttribute("href"));
+          section.scrollIntoView({ behavior: "smooth" });
+        });
+      });
+    </script>
+  </body>
+</html>
